@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" placeholder="0" id="inputBox">
+        <div>
+            <button onclick="deleteAllItem()" class="operator">AC</button>
+            <button onclick="deleteItem()" class="operator">DEL</button>
+            <button onclick="getInput('%')"class="operator">%</button>
+            <button onclick="getInput('/')" class="operator">/</button>
+
+        </div>
+        <div>
+            <button onclick="getInput(7)">7</button>
+            <button onclick="getInput(8)">8</button>
+            <button onclick="getInput(9)">9</button>
+            <button onclick="getInput('*')" class="operator">*</button>
+
+        </div>
+        <div>
+            <button onclick="getInput(4)">4</button>
+            <button onclick="getInput(5)">5</button>
+            <button onclick="getInput(6)">6</button>
+            <button onclick="getInput('-')" class="operator">-</button>
+
+        </div>
+        <div>
+            <button onclick="getInput(1)">1</button>
+            <button onclick="getInput(2)">2</button>
+            <button onclick="getInput(3)">3</button>
+            <button onclick="getInput('+')" class="operator">+</button>
+
+        </div>
+        <div>
+            <button onclick="getInput('00')">00</button>
+            <button onclick="getInput(0)">0</button>
+            <button onclick="getInput('.')">.</button>
+            <button onclick = "equalto()" class="equalbtn">=</button>
+
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
